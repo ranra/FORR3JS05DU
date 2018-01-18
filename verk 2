@@ -1,0 +1,57 @@
+1.EcmaScript er forritunartungumál sem var gert til að staðla javascript
+
+2.það þýðir að maður þarf ekki að skilgreina af hvaða tagi breyta er 
+
+3.það er enginn munur
+
+4.undefined er a breytu sem er ekki buið að gefa gildi en null er a breytu sem hefur ekkert gildi
+
+5. == spyr hvort þetta hafi sama gildi === spyr hvort þetta sé nkml það sama
+
+6.  Var er "scoped" að næsta "function" en Let er með (block scope) og gefur curly brackets gildi
+function(){
+	for(let i; i< 3;i++)
+	//let er aðeins sýnilegt í for loop
+
+	for(var i; i< 3;i++)
+	//var er sýnilegt fyrir alla inní fallinu
+}
+
+
+
+7.
+Function Declaration
+function konni (){
+	a =2
+	return a;
+
+}
+
+Function Expression
+var konni = function(){
+	a = 2
+	return a;
+}
+
+Arrow Function
+var konni = (a, b) => a*b;
+
+8. strict er notað til að keyra kóðan í strict mode  og þarmeð geturu ekki t.d notað  óskilgreindar breytur
+
+9.vegna "hoist" þá liftir þýðandinn function x() ofar
+
+10.
+"hoist" liftir  funtion bar sem skilar 8 fyrir ofan return bar; og þarmeð skilar þetta 8
+
+11.
+ef þú gleymir að setja var þá verður breytan global og dettur i gegnum scope-in
+
+12.
+svigarnir sem halda utanum fallið sjá til þess að þýðandinn fari með það sem aðgerð 
+og (); sér til þess að fallið sé keyrt strax
+
+13.
+breytur eru annað hvort local eða global . Ef maður setur breytu inní fall þá getur hún aðeins verið notuð þar  þannig er variable scope skilgreint 
+
+14.
+call stack er notað til að geyma upplýsingar um hvenær hver aðgerð var framkvæmd og hvað gerist næst
