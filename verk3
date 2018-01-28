@@ -1,0 +1,110 @@
+1.
+ template literals er leið til að splæsa saman functions og streng og gera það læsilegra
+
+?????
+
+
+2.
+FOR loop fer í gegnum kóða svo lengi sem hann er TRUE 
+
+FOR-OF fer yfir hvern og einn hlut í t.d strengnum sem þú ferð yfir "api" verðru a p i
+
+FOR-EACH er virkar svipað og FOR-OF en er notað fyrir objects semsagt sækir value frá key í object
+
+FOR-IN virkar svipað og hinir en getur unnið með key og value i object
+
+3.
+	1. reverse()
+	2.sort()
+	3.shift() og splice()
+	4.join()
+
+4.
+var test = [12, 929, 11, 3, 199, 1000, 7, 1, 24, 37, 4,
+    19, 300, 3775, 299, 36, 209, 148, 169, 299,
+    6, 109, 20, 58, 139, 59, 3, 1, 139
+];
+
+// Write your code here
+function myfunc(thing){
+    if (thing % 3 === 0){
+        thing +=100;
+        console.log(thing)
+    }
+    
+}
+test.forEach(myfunc);
+
+5.
+var bills = [50.23, 19.12, 34.01,
+    100.11, 12.15, 9.90, 29.11, 12.99,
+    10.00, 99.22, 102.20, 100.10, 6.77, 2.22
+];
+
+total = bills.map(function(amount){
+    amount = Number((amount*1.1).toFixed(2))
+    return amount;
+})
+console.log(total)
+
+6.
+var numbers = [
+    [243, 12, 23, 12, 45, 45, 78, 66, 223, 3],
+    [34, 2, 1, 553, 23, 4, 66, 23, 4, 55],
+    [67, 56, 45, 553, 44, 55, 5, 428, 452, 3],
+    [12, 31, 55, 445, 79, 44, 674, 224, 4, 21],
+    [4, 2, 3, 52, 13, 51, 44, 1, 67, 5],
+    [5, 65, 4, 5, 5, 6, 5, 43, 23, 4424],
+    [74, 532, 6, 7, 35, 17, 89, 43, 43, 66],
+    [53, 6, 89, 10, 23, 52, 111, 44, 109, 80],
+    [67, 6, 53, 537, 2, 168, 16, 2, 1, 8],
+    [76, 7, 9, 6, 3, 73, 77, 100, 56, 100]
+];
+
+// your code goes here
+
+    for(var row = 0; row < numbers.length; row++){
+        for (var item = 0; item < numbers[row].length; item++){
+            if(numbers[row][item]% 2 === 0){
+               var change = "even";
+            }else{
+                var change = "odd";
+            }console.log(change) ;
+            
+        }
+    }
+
+
+7.
+var menu = {
+    name:"the Lumberjack",
+    price : 9.99,
+    ingredients:["eggs", "sausage", "toast", "hashbrowns", "pancakes"]  
+};
+
+8.
+
+var savingsAccount = {
+    balance: 1000,
+    interestRatePercent: 1,
+  printAccountSummary: function(){
+       // return "a"+5 ;
+        return  "your balance is currently $"+savingsAccount.balance+" and your interest rate is "+savingsAccount.interestRatePercent+"%";
+    },   // your code goes here
+    deposit: function addMoney(amount) {
+        if (amount > 0) {
+            savingsAccount.balance += amount;
+        }
+    },
+    withdraw: function removeMoney(amount) {
+        var verifyBalance = savingsAccount.balance - amount;
+        if (amount > 0 && verifyBalance >= 0) {
+            savingsAccount.balance -= amount;
+        }
+    },
+   
+};
+
+console.log(savingsAccount.printAccountSummary());
+
+9.
