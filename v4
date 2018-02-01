@@ -1,0 +1,62 @@
+1.
+
+"use strict";
+function SpaceShips (){
+
+         this.name ="SpaceRacer",
+
+         this.life = 10,
+
+         this.showName = function(){
+
+                    console.log("geimflaugin heitir " + this.name);
+
+                };
+
+};
+
+ 
+
+var spaceShip1 = new SpaceShips();
+
+var spaceShip2 = new SpaceShips();
+
+var spaceShip3 = new SpaceShips();
+
+ 
+
+spaceShip1.name = "numeroUno";
+
+spaceShip1.showName();
+
+ 
+
+SpaceShips.prototype.fly = 1;
+
+SpaceShips.prototype.speed = 5;
+
+console.log(spaceShip1.speed);
+
+
+var spaceShip4 = new SpaceShips();
+
+spaceShip4.damage = function(){
+	this.life -= 1;
+};
+spaceShip4.damage();
+console.log(spaceShip4.life);
+
+
+
+2.
+function Teacher(first, last, age, gender, interests, subject) {
+  Person.call(this, first, last, age, gender, interests);
+
+  this.subject = subject;
+}
+
+hérna fyrir ofan erfir teacher  pointera frá person 
+fyrst setur það skilyrði um að person  hafi titilinn this og setur svo gildin inní sviga
+
+3.
+class eins og ég skil það er leið til að einfalda classical uppsetningu í java  og gefa m0guleikan á að komast framhjá að læra almennilega á prototype
