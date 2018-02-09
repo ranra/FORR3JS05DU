@@ -1,0 +1,32 @@
+1.
+því maður getur kallað á element  með id  og engin element eru með sama id
+
+2.
+queryselectorall() fer i gegnum css býr til node lista með öllu því sem á við. 
+
+<li id = "box">kassi</li>
+<li id = "animal">api</li>
+<li id = "animal">kisi</li>
+<li id = "animal">hundur</li> 
+
+
+querySelectorAll("li.animal")
+
+skilar 0 api
+	   1 kisi
+	   2 hundur
+
+
+3.
+var elements = document.getElementsByTagName('li');
+// elements er jafnt og listi með  öllum sem hefur tagið li
+
+if (elements.length > 0) {
+//ef listinn er  lengri en 0 þá er farið inní loopuna
+
+ var el = elements[2];
+ el er jafnt og þriðja elementið  i listanum element
+
+ el.className = 'cool';
+ þarsem  el er object er hægt að nota það  sem object til að breyta nafninu á klasanum sem þriðja elementið í element listanum hefur 
+}
