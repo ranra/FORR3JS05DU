@@ -1,0 +1,21 @@
+2. Hvað gerir eftirfarandi kóði? (0.25%)
+let link = document.body.getElementsByTagName("a")[0];
+console.log(link.href);
+
+hann finnur  tag "a" inni body og skilar því sem href bendir á
+
+
+4. Það eru til þrjár leiðir að binda event við element, hver þeirra leiða er best og af hverju? (0.5%)
+
+	1. html event handlers 
+		er slæm aðferð sem ber ekki að nota .
+
+	2. Traditional DOM  event handlers
+		gert til að aðskilja html og javascript
+
+	3. Dom level 2 event handlers
+		er betri gerðin  af fyrr nefndu dæmi 
+		og ólíkt því getur eitt event triggerað mörg functions
+
+
+
