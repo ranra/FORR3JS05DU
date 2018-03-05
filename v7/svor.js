@@ -7,21 +7,18 @@
 
 
 3.
-	function checkUsername() {
-	var elMsg = document.get ElementByld('feedback');
-	if (this.value.lengt h<5) {
-	elMsg.textContent 'Username must be 5 characters or more';
-	}else {
-		elMsg.textContent='';
+	function checkUsername(e, minlength) {
+	var target = e.target;
 	}
+	var el = document.getElementById('username');
+	el.addEventListener('blur', function(e){checkUsername(e,5);}, false);
 
-var elUsername = document.get El ementByld(' username') ;
-elUsername.addEventlistener('blur' , checkUsername , false) ; 
+
 
 4. Event flow, Hvað þýðir false í Event Listener? (0.25%)
-elUsername.addEventListener('blur' , function() {
-checkUsername(5);
-}, false)
+	elUsername.addEventListener('blur' , function() {
+	checkUsername(5);
+	}, false)
 
 	false þýir að þú viljir ekki gera event capture sem byrjar yst 
 	á event flow hringnum og vinnur sig niður
@@ -31,5 +28,5 @@ checkUsername(5);
 	preventOefault() hættir við venjulega hegðun eventsins
 	stopPropagation() stoppar event flow 
 
-6.
+
 
