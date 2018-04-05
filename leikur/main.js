@@ -3,6 +3,11 @@ var canvas = document.getElementById('canvas');
 
 var ctx = canvas.getContext('2d');
 
+  canvas.addEventListener('click', () => {
+   console.log('canvas click');
+});
+
+
 var width = canvas.width = window.innerWidth;
 var height = canvas.height = window.innerHeight;
 
@@ -70,7 +75,8 @@ function loop() {
       random(0,width),
       random(0,height),
       random(-7,7),
-      random(-7,7),
+      0,
+      //random(-7,7),
       'rgb(' + random(0,255) + ',' + random(0,255) + ',' + random(0,255) +')',
       random(10,20)
     );
@@ -82,7 +88,7 @@ function loop() {
     balls[i].draw();
     balls[i].update();
   }
-	
+
   requestAnimationFrame(loop);
 }
 
@@ -104,4 +110,8 @@ Ball.prototype.collisionDetect = function() {
     }
   }
 };
-balls[i].collisionDetect();
+
+
+
+
+
