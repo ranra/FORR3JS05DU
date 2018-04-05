@@ -5,30 +5,30 @@
     {                                              // Each person is an object
       name: 'Alex',                               // It holds name and rate
       rate: 90,
-      date:23.3.10
+      date:"23.3.10"
     },
     {
       name: 'Sindri',
       rate: 46,
-      date:23.3.10
+      date:"29.6.01"
       
     },
     {
       name: 'Kalli',
       rate: 57,
-      date:23.3.10
+      date:"1.8.10"
       
     },
     {
-      name: 'þóra',
+      name: 'Bergur',
       rate: 111,
-      date:23.3.10
+      date:"9.9.11"
       
     },
     {
       name: 'Arnar',
       rate: 30,
-      date:23.3.10
+      date:"16.5.14"
       
     }
   ];
